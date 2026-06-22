@@ -24,15 +24,10 @@ console.log("Test 2: +968 8765 4321 →", validatePhoneNumber("+968 8765 4321"))
 console.log("Test 3: +968 91234567 →", validatePhoneNumber("+968 91234567")); // Should be true
 // INVALID test cases
 console.log("\n INVALID CASES:");
-console.log("Test 4: +971 5123 4567 →", validatePhoneNumber("+971 5123 4567")); // Should be false
-(UAE number)
-console.log("Test 5: +968 123 4567 →", validatePhoneNumber("+968 123 4567")); // Should be false
-(too short)
-console.log("Test 6: 9123 4567 →", validatePhoneNumber("9123 4567")); // Should be false (no
-country code)
-console.log("Test 7: +968 7123 4567 →", validatePhoneNumber("+968 7123 4567")); // Should be false
-(starts with 7)
-console.log("Test 8: +968 91234567890 →", validatePhoneNumber("+968 91234567890")); // Should be
-false (too long)
+console.log("Test 4: +971 5123 4567 →", validatePhoneNumber("+971 5123 4567")); // Should be false (UAE number)
+console.log("Test 5: +968 123 4567 →", validatePhoneNumber("+968 123 4567")); // Should be false (too short)
+console.log("Test 6: 9123 4567 →", validatePhoneNumber("9123 4567")); // Should be false (nocountry code)
+console.log("Test 7: +968 7123 4567 →", validatePhoneNumber("+968 7123 4567")); // Should be false (starts with 7)
+console.log("Test 8: +968 91234567890 →", validatePhoneNumber("+968 91234567890")); // Should be false (too long)
 
 console.log("\n=== Tests Complete ===");
